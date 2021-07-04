@@ -1,5 +1,11 @@
 {
-    "presets": [
-        "env"
+  "presets": [
+    [
+      "env",
+      {
+        "targets": { "node": "current" }
+      }
     ]
+  ],
+  "plugins": ["transform-es2015-destructuring", "transform-object-rest-spread", "import-graphql"]
 }
