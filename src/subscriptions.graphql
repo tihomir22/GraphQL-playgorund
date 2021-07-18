@@ -1,0 +1,16 @@
+type Subscription {
+  count: Int!
+  comment(postId: ID!): CommentSubscriptionPayload!
+  post: PostSubscriptionPayload!
+}
+
+type PostSubscriptionPayload {
+  mutation: MutationType!
+  data: Post!
+}
+
+type CommentSubscriptionPayload {
+    mutation: MutationType!
+    data: Comment!
+}
+

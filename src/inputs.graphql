@@ -27,3 +27,9 @@ input CreateCommentInput {
   author: ID!
   post: ID!
 }
+
+input UpdateCommentInput {
+  text: String
+  author: ID
+  post: ID
+}

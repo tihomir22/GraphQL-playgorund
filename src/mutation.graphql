@@ -6,5 +6,6 @@ type Mutation {
   deletePost(id: ID!): Post!
   updatePost(id: ID!, data: UpdatePostInput): Post!
   createComment(data: CreateCommentInput): Comment!
+  updateComment(id: ID!, data: UpdateCommentInput): Comment!
   deleteComment(id: ID!): Comment!
 }
